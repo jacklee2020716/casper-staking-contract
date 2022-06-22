@@ -101,6 +101,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "casper_types_derive"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1185d558597a7985e936c1e312810e46d3904888b298635f78370b729055fa28"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "cfg-if"
 version = "0.1.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -118,6 +129,17 @@ version = "0.1.0"
 dependencies = [
  "casper-contract",
  "casper-types",
+ "casper_types_derive",
+ "contract-utils",
+]
+
+[[package]]
+name = "contract-utils"
+version = "0.1.0"
+dependencies = [
+ "casper-contract",
+ "casper-types",
+ "hex",
 ]
 
 [[package]]
